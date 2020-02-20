@@ -103,6 +103,12 @@ h6 {
     position: relative;
   }
 }
+@media all and (min-width: 1366px) and (max-width: 1439px) {
+  .iphone-x2 {
+    width: 330px;
+    height: 90vh;
+  }
+}
 @media all and (min-width: 1660px) {
   .iphone-x2 {
     width: 400px;
@@ -110,6 +116,8 @@ h6 {
     position: relative;
   }
 }
+
+
 .iphone-phone-background {
   display: none;
 }
@@ -182,6 +190,7 @@ h6 {
   text-align: center;
   color: #ffffff;
   margin-bottom: 29px;
+  padding: 0 25px;
 }
 
 .home-heading h4 {

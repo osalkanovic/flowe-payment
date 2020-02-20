@@ -23,7 +23,7 @@
     height: 85px;
     width: 100%;
     position: absolute;
-    bottom: 11%;
+    bottom: 12%;
     overflow: hidden;
     background : #0a091a;
 }
@@ -35,6 +35,16 @@
     height: 65px;
     padding: 5px 24px;
     max-width: calc(100% - 48px);
+}
+@media all and (min-width: 1366px) and (max-width: 1439px) {
+    .emoji-scroll {
+        height: 55px;
+    }
+}
+@media all and (min-width: 480px) {
+    .emoji-scroll {
+        padding: 5px 42px;
+    }
 }
 .emoji-scroll::-webkit-scrollbar {
    display: none;

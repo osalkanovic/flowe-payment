@@ -1,0 +1,33 @@
+.enter-message-text {
+  font-size: 18px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+  padding: 0 35px;
+  margin-top: 10px;
+}
+
+.enter-message-date {
+  font-size: 15px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  z-index: 1;
+  margin-top: 18px;
+}
+
+.enter-message-avatar {
+  width: 90px;
+  height: 90px;
+  z-index: 1;
+  margin-top: 15px;
+}

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="receive-payment.css" />
   <link rel="stylesheet" href="accepted-screen-confirmation.css" />
+  <link rel="stylesheet" href="enter-message.css" />
   <link rel="stylesheet" href="rejected-screen.css" />
-
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
     rel="stylesheet" />
-  <title>Document</title>
+  <title>Enter message</title>
 </head>
 
 <body>
@@ -20,32 +20,34 @@
         <img src="./assets/iPhoneXS - Space Gray.png" alt="iphone background " />
       </div>
       <div class="home-container">
-        <div class="accepted-heading rejected-screen-heading">
-          <img class="rejected-screen-left-arrow" src="./assets/left-arrow.png" />
-          <div class=' rejected-screen-height absolute-background-path '>
+        <div class="accepted-heading">
+          <div class='absolute-background-path'>
             <img src="./assets/new-path.png" alt='background image' />
           </div>
-          <img class='rejected-screen-logo' src="./assets/flowe-logo.png" alt="logo" />
-          <p class='rejected-screen-title'>Invia a</p>
-          <div class="rejected-screen-avatar">
-            <img class='' src="./assets/avatar.png" alt="profile-image" />
+          <img class='accepted-logo' src="./assets/flowe-logo.png" alt="logo" />
+          <p class='enter-message-text'>Hey, hai una richiesta di ricarica del Drop “Vacanze 2019” da</p>
+          <h4 class='enter-message-date'>20 Set 2020 17:12</h4>
+          <div class="enter-message-avatar">
+            <img src="./assets/avatar.png" alt="profile-image" />
           </div>
         </div>
         <div class="home-content flex-column align-center">
           <p>
             Silvia Morante
           </p>
-          <div class="home-price flex-row rejected-text relative ">
-            <div class="reject-line"></div>
-            <h1 id="price" class="price-reject">100 €</h1>
+          <div class="home-price flex-row">
+            <h1 id="price">100 €</h1>
+            <div class="edit-icon-border">
+              <img src="./assets/edit-icon.png" alt="edit icon" />
+            </div>
           </div>
         </div>
         <div class="home-content-wrapper">
           <div>
             <div class=" flex-column home-message-bubble">
-              <p>Vuio scrivere un messaggio?</p>
+              <p>Messaggio</p>
               <span>
-                Text message
+                Mamy, posso avere la paghetta in  anticipo per favore? 😭😭😭
               </span>
             </div>
           </div>
@@ -92,15 +94,9 @@
         size = 37;
       } else if (count === 11) {
         size = 39;
-      } else {
-        size = 48;
       }
       $('#price').css({ 'font-size': size });
     });
-  </script>
-  <script>
-    var width = $('#price').innerWidth();
-    $('#line').css({ 'width': width })
   </script>
 </body>
 
