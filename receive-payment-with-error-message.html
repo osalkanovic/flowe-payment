@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="receive-payment.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="home-wrapper">
+    <div class="iphone-x2">
+      <div class="iphone-phone-background">
+        <img src="./assets/iPhoneXS - Space Gray.png" alt="iphone background " />
+      </div>
+      <div class="home-container">
+        <div class="home-heading">
+          <img src="./assets/flowe-logo.png" alt="logo" />
+          <p>Hey, hai una richiesta di ricarica da</p>
+          <h4>20 Set 2020 17:12</h4>
+          <div class="home-avatar">
+            <img src="./assets/avatar.png" alt="profile-image" />
+          </div>
+        </div>
+        <div class="home-content flex-column align-center">
+          <p>
+            Silvia Morante
+          </p>
+          <div class="home-price flex-row">
+            <h1 id="price">100 €</h1>
+            <div class="edit-icon-border">
+              <img src="./assets/edit-icon.png" alt="edit icon" />
+            </div>
+          </div>
+        </div>
+        <!-- If we add big amount, show this error -->
+        <!-- <div class='home-price-error'>
+          <p>Attenzione: l’importo inserito è troppo elevato</p>
+        </div> -->
+        <div class="home-content-wrapper">
+          <div>
+            <div class=" flex-column home-message-bubble">
+              <p>Messaggio</p>
+              <span>
+                Mamy, posso avere la paghetta in  anticipo per favore? 😭😭😭
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-buttons">
+        <button type="button" class="first-button">
+          <span id="home-confirm-button-text">Rifiuta</span>
+          <img class="home-decline-icon" src="./assets/thumbs_up.svg" />
+        </button>
+
+        <button type="button" class="second-button">
+          <img src="./assets/thumbs_up.svg" />
+          <span id="home-confirm-button-text">Accetta</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onresize = function () {
+      document.body.height = window.innerHeight;
+    };
+    window.onresize(); // called to initially set the height.
+  </script>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var count = $('#price').text().length;
+      var size = 48;
+      if (count === 13) {
+        size = 35;
+      } else if (count === 12) {
+        size = 37;
+      } else if (count === 11) {
+        size = 39;
+      }
+      $('#price').css({ 'font-size': size });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+.accepted-avatar {
+  width: 161px;
+  height: 160px;
+  z-index: 1;
+  position: relative;
+}
+@media all and (min-width: 414px) {
+  .accepted-avatar {
+    width: 171px;
+    height: 170px;
+  }
+}
+.accepted-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+
+.accepted-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 40px;
+  min-height: 250px;
+  padding-bottom: 20px;
+  position: relative;
+}
+@media all and (min-width: 480px) {
+  .accepted-heading {
+    padding-top: 60px
+  }
+}
+
+@media all and (min-width: 425px) {
+  .accepted-heading {
+    background-position-y: 7%;
+  }
+}
+ 
+@media all and (min-width: 450px) {
+  .accepted-heading {
+    background-position-y: 9%;
+  }
+}
+@media all and (min-width: 480px) {
+  .accepted-heading {
+    background-position-y: -3%;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1439px) {
+  .accepted-heading {
+    padding-top: 60px;
+  }
+}
+
+  .accepted-heading .accepted-logo {
+    width: 142.4px;
+    height: 43px;
+    margin-bottom: 11px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .accepted-content {
+    z-index: 1;
+    min-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .accepted-content p {
+    font-size: 22px;
+    font-weight: 200;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .absolute-background-path {
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    max-height: 500px;
+  }
+  .absolute-background-path img  {
+    width: 170%;
+    transform: translate(0, -35%);
+  }
+
+  @media all and (min-width: 480px) {
+    .absolute-background-path {
+      max-height: 550px;
+    }
+    .absolute-background-path img  {
+      width: 170%;
+      transform: translate(0, -35%);
+    }
+  }
+
+ .accepted-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b081a;
+  height: 65px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 30px;
+ }
+
+ @media all and (min-width: 480px) {
+   .accepted-button {
+    left: 50%;
+    transform: translateX(-50%);
+
+    position: absolute;
+    width: 77%;
+   }
+ }
+
+
+
+ .accepted-button img:active {
+   opacity: 0.8;
+ }
+
+ .accepted-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 66px;
+    height: 66px;
+    background: white;
+    border-radius: 100%;
+
+ }

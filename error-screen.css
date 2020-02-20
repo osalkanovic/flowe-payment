@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  height: 100vh;
+  background-color: #0a091a;
+  justify-content: center;
+}
+.error-heading {
+  margin-top: 24px;
+}
+@media all and (min-width: 480px) {
+  .error-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+}
+.error-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.error-heading img {
+  width: 142.4px;
+  height: 43px;
+}
+
+.error-content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 18px;
+}
+@media all and (min-width: 480px) {
+  .error-content {
+    padding: 0 38px;
+  }
+}
+
+.error-content img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+
+.error-content h1 {
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.error-content p {
+  font-size: 15px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
