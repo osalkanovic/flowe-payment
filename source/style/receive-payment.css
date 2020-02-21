@@ -108,7 +108,7 @@ h6 {
 
   .iphone-phone-background img {
     width: 100%;
-    height: 100%;
+    height: 98%;
     transform: scale(1.03);
   }
 }
@@ -127,10 +127,9 @@ h6 {
     position: relative;
   }
 }
-@media all and (min-width: 1366px) and (max-width: 1439px) {
+@media all and (min-width: 1100px) and (max-width: 1439px) {
   .iphone-x2 {
     width: 330px;
-    height: 90vh;
   }
 }
 @media all and (min-width: 1660px) {
@@ -156,6 +155,9 @@ h6 {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    align-items: center;
+    justify-items: center;
+    display: flex;
   }
 }
 .home-heading {

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style/accepted-screen-confirmation.css" />
   <link rel="stylesheet" href="../style/receive-payment.css" />
+  <link rel="stylesheet" href="../style/global.css" />
+  
 
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
@@ -14,8 +16,8 @@
 
 <body>
   <div class="home-wrapper">
-    <div class="iphone-x2">
-      <div class="iphone-phone-background">
+    <div id='iphoneContainer' class="iphone-x2">
+      <div id='contentScroll' class="iphone-phone-background">
         <img src="../assets/iPhoneXS - Space Gray.png" alt="iphone background " />
       </div>
       <div class="home-container">
@@ -86,7 +88,26 @@
     });
   </script>
   <script>
-    $('#resolution').text($("#resolution").text() + window.outerWidth.toString() + " " + window.outerHeight.toString())
+    // $('#resolution').text($("#resolution").text() + window.outerWidth.toString() + " " + window.outerHeight.toString())
+    var isTouchDevice = function () { return 'ontouchstart' in window || 'onmsgesturechange' in window; };
+    var isDesktop = isTouchDevice() ? true : false;
+    if (!isDesktop) {
+      $('#iphoneContainer').css({ 'height': window.innerHeight * 0.9 })
+      $('#contentScroll').css({ 'overflow': 'scroll' })
+      $('#contentScroll').addClass('isSmallDesktop');
+    }
+  </script>
+
+  <script>
+    $(window).resize(function () {
+      var isTouchDevice = function () { return 'ontouchstart' in window || 'onmsgesturechange' in window; };
+      var isDesktop = isTouchDevice() ? true : false;
+      if (!isDesktop) {
+        $('#iphoneContainer').css({ 'height': window.innerHeight * 0.9 })
+        $('#contentScroll').css({ 'overflow': 'scroll' })
+        $('#contentScroll').addClass('isSmallDesktop');
+      }
+    })
   </script>
 </body>
 
