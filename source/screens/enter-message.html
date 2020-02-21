@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/receive-payment.css" />
+  <link rel="stylesheet" href="../style/enter-message.css" />
+  <link rel="stylesheet" href="../style/rejected-screen.css" />
+  <link rel="stylesheet" href="../style/accepted-screen-confirmation.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" />
+  <title>Enter message</title>
+</head>
+
+<body>
+  <div id='container' class="home-wrapper">
+    <div class="iphone-x2">
+      <div class="iphone-phone-background">
+        <img src="../assets/iPhoneXS - Space Gray.png" alt="iphone background " />
+      </div>
+      <div class="home-container">
+        <div class="accepted-heading enter-message-heading">
+          <div class='absolute-background-path accepted-absolute-path'>
+            <img src="../assets/new-path.png" alt='background image' />
+          </div>
+          <img class='accepted-logo' src="../assets/flowe-logo.png" alt="logo" />
+          <p class='enter-message-text'>Hey, hai una richiesta di ricarica del Drop “Vacanze 2019” da</p>
+          <h4 class='enter-message-date'>20 Set 2020 17:12</h4>
+          <div class="enter-message-avatar">
+            <img src="../assets/avatar.png" alt="profile-image" />
+          </div>
+        </div>
+        <div class="home-content flex-column align-center">
+          <p id='resolution'>
+            Silvia Morante
+          </p>
+          <div class="home-price flex-row">
+            <h1 id="price">100 €</h1>
+            <div class="edit-icon-border">
+              <img src="../assets/edit-icon.png" alt="edit icon" />
+            </div>
+          </div>
+        </div>
+        <div class="home-content-wrapper enter-massage-content-wrapper">
+          <div>
+            <div class=" flex-column home-message-bubble">
+              <p>Messaggio</p>
+              <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nam quis officiis pariatur soluta
+                iusto. Est nostrum officia rem hic minus lorem ipsum dolor se
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-buttons reject-button-container eneter-message-button" style="flex-direction: column;">
+        <div class="emoji-container">
+          <div class="emoji-scroll">
+            <img src='../assets/group_9.svg' />
+            <img src='../assets/group_10.svg' />
+            <img src='../assets/group_5.svg' />
+            <img src='../assets/group_7.svg' />
+            <img src='../assets/group_8.svg' />
+            <img src='../assets/group_9.svg' />
+            <img src='../assets/group_10.svg' />
+            <img src='../assets/group_5.svg' />
+            <img src='../assets/group_8.svg' />
+            <img src='../assets/group_7.svg' />
+            <img src='../assets/group_8.svg' />
+            <img src='../assets/group_9.svg' />
+            <img src='../assets/group_10.svg' />
+          </div>
+        </div>
+
+        <button type="button" class="reject-button">
+          <span id="home-confirm-button-text">Invia</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onresize = function () {
+      document.body.height = window.innerHeight;
+    };
+    window.onresize(); // called to initially set the height.
+  </script>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var count = $('#price').text().length;
+      var size = 48;
+      if (count === 13) {
+        size = 35;
+      } else if (count === 12) {
+        size = 37;
+      } else if (count === 11) {
+        size = 39;
+      }
+      $('#price').css({ 'font-size': size });
+    });
+  </script>
+  <script>
+    $('#resolution').text($("#resolution").text() + window.outerWidth.toString() + " " + window.outerHeight.toString())
+  </script>
+</body>
+
+</html>

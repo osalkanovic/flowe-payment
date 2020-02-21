@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="receive-payment.css" />
-  <link rel="stylesheet" href="accepted-screen-confirmation.css" />
+  <link rel="stylesheet" href="../style/accepted-screen-confirmation.css" />
+  <link rel="stylesheet" href="../style/receive-payment.css" />
 
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
@@ -16,28 +16,28 @@
   <div class="home-wrapper">
     <div class="iphone-x2">
       <div class="iphone-phone-background">
-        <img src="./assets/iPhoneXS - Space Gray.png" alt="iphone background " />
+        <img src="../assets/iPhoneXS - Space Gray.png" alt="iphone background " />
       </div>
       <div class="home-container">
         <div class="accepted-heading">
-          <div class='absolute-background-path'>
-            <img src="./assets/new-path.png" alt='background image' />
+          <div class='absolute-background-path accepted-screen-backg-path'>
+            <img src="../assets/new-path.png" alt='background image' />
           </div>
-          <img class='accepted-logo' src="./assets/flowe-logo.png" alt="logo" />
+          <img class='accepted-logo' src="../assets/flowe-logo.png" alt="logo" />
           <!-- <p>Hey, hai una richiesta di ricarica da</p>
           <h4>20 Set 2020 17:12</h4> -->
           <div class="accepted-avatar">
-            <img src="./assets/bitmap-placeholder.png" alt="profile-image" />
+            <img src="../assets/bitmap-placeholder.png" alt="profile-image" />
           </div>
         </div>
         <div class="home-content flex-column align-center accepted-content">
-          <p>
-            Hai rifiutato la richiesta
+          <p id='resolution'>
+            Hai accettato la richiesta
           </p>
           <!-- <div class="home-price flex-row">
             <h1 id="price">100 €</h1>
             <div class="edit-icon-border">
-              <img src="./assets/edit-icon.png" alt="edit icon" />
+              <img src="../assets/edit-icon.png" alt="edit icon" />
             </div>
           </div> -->
         </div>
@@ -50,7 +50,8 @@
             <div class=" flex-column home-message-bubble">
               <p>Il tuo messaggio</p>
               <span>
-                Mi spiace cara, ma hai già speso troppo
+                Ma certo tesoro!! Ma certo tesoro!! Ma certo tesoro!! Ma certo tesoro!! Ma certo tesoro!! Ma certo
+                tesoro!! Ma certo tesoro!! Ma certo tesoro!!
               </span>
             </div>
           </div>
@@ -58,7 +59,7 @@
       </div>
       <div class="accepted-button">
         <div class='accepted-icon'>
-          <img src='./assets/devil-icon.png' alt='smile icon' />
+          <img src='../assets/money-face.png' alt='smile icon' />
         </div>
       </div>
     </div>
@@ -83,6 +84,9 @@
       }
       $('#price').css({ 'font-size': size });
     });
+  </script>
+  <script>
+    $('#resolution').text($("#resolution").text() + window.outerWidth.toString() + " " + window.outerHeight.toString())
   </script>
 </body>
 

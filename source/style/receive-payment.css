@@ -58,11 +58,35 @@ h6 {
     display: none;
   }
 }
+.home-input {
+  display: none;
+  align-items: center;
+}
+.home-input input {
+  font-size: 46px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  margin-bottom: unset; 
+  width: 100px;
+  background: transparent;
+  border: none;
+  margin-right: -25px;
+  outline: none;
+  resize: horizontal;
+  min-width: 200px;
+  text-align: right;
+}
 
 .home-wrapper {
   height: 100vh;
 }
-
+#inputMessageText{
+  overflow: hidden;
+}
 @media all and (min-width: 480px) {
   .home-wrapper {
     background: #0a091a;
@@ -140,7 +164,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(130deg, #1aa96a, #0b434a 100%);
-  background-image: url('./assets/Path.png');
+  background-image: url('../assets/Path.png');
   background-size: cover;
   padding-top: 60px;
   min-height: 250px;
@@ -231,7 +255,7 @@ h6 {
 
 .home-content {
   background-color: #0a091a;
-  min-height: 115px;
+  min-height: 50px;
 }
 .home-content p {
   font-family: 'Nunito', sans-serif;
@@ -273,6 +297,11 @@ h6 {
   margin-left: 28px;
   margin-right: 28px;
 }
+@media all and (max-width: 400px) {
+  .home-message-bubble {
+    padding: 10px 15px;
+  }
+}
 @media all and (min-width: 480px) {
   .home-message-bubble {
       max-width: 366px;
@@ -304,7 +333,7 @@ h6 {
 .home-price {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   align-items: center;
 }
 .home-price h1 {
@@ -344,7 +373,6 @@ h6 {
   text-align: left;
   color: white;
   width: 100%;
-  max-width: 80%;
   align-self: flex-start;
 }
 
@@ -531,6 +559,23 @@ h6 {
   text-align: center;
   color: #f44a3d;
 }
+.home-message-bubble textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.8px;
+  text-align: left;
+  width: 100%;
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  color: white;
+}
 /* Input containers to be used in the future */
 /* 
 .home-input-container input {
@@ -561,3 +606,4 @@ h6 {
   text-align: left;
   color: rgba(255, 255, 255, 0.35);
 } */
+
